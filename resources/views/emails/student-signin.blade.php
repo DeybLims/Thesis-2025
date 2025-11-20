@@ -140,89 +140,105 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <h1>📍 PinPoint</h1>
-            <p>Attendance Notification</p>
+            <div class="brand">
+                <div class="logo">📍</div>
+                <div>
+                    <h1>PinPoint</h1>
+                    <p>Attendance Notification</p>
+                </div>
+            </div>
+            <div class="timestamp">
+                {{ now()->format('l • F j, Y • g:i A') }}
+            </div>
         </div>
 
         <!-- Content -->
         <div class="content">
-            <div class="greeting">
-                Hello {{ $guardianName }},
+            <div class="greeting-card">
+                <p class="greeting">Hello {{ $guardianName }},</p>
+                <p class="summary">
+                    Your child <strong>{{ $studentName }}</strong> has just signed in.
+                </p>
             </div>
-
-            <p style="color: #4b5563; font-size: 16px; line-height: 1.6;">
-                Your child <strong>{{ $studentName }}</strong> has signed in to their class.
-            </p>
 
             <!-- Sign-In Details -->
-            <div class="info-box">
-                <h3 style="margin: 0 0 15px 0; color: #1f2937; font-size: 16px;">
-                    <span class="emoji">📋</span> Sign-In Details
-                </h3>
-                
-                <div class="info-row">
-                    <span class="info-label">Class:</span>
-                    <span class="info-value">{{ $className }}</span>
+            <div class="card sign-in-card">
+                <div class="card-header">
+                    <div class="card-icon">📝</div>
+                    <div>
+                        <p class="card-eyebrow">Attendance</p>
+                        <h3>Sign-In Details</h3>
+                    </div>
                 </div>
 
-                <div class="info-row">
-                    <span class="info-label">Teacher:</span>
-                    <span class="info-value">{{ $teacherName }}</span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Date:</span>
-                    <span class="info-value">{{ $signInDate }}</span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Time:</span>
-                    <span class="info-value">{{ $signInTime }}</span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Status:</span>
-                    <span class="info-value">
-                        <span class="status-badge {{ $status === 'On Time' ? 'status-ontime' : 'status-late' }}">
-                            {{ $status === 'On Time' ? '✓ On Time' : '⚠ Late' }}
-                        </span>
-                    </span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Building:</span>
-                    <span class="info-value">{{ $buildingName ?? 'Assigned Building' }}</span>
+                <div class="details-grid">
+                    <div class="detail">
+                        <span>Class</span>
+                        <p>{{ $className }}</p>
+                    </div>
+                    <div class="detail">
+                        <span>Teacher</span>
+                        <p>{{ $teacherName }}</p>
+                    </div>
+                    <div class="detail">
+                        <span>Date</span>
+                        <p>{{ $signInDate }}</p>
+                    </div>
+                    <div class="detail">
+                        <span>Time</span>
+                        <p>{{ $signInTime }}</p>
+                    </div>
+                    <div class="detail">
+                        <span>Status</span>
+                        <p>
+                            <span class="status-chip {{ $status === 'On Time' ? 'status-success' : 'status-warning' }}">
+                                {{ $status === 'On Time' ? '✓ On Time' : '⚠ Late' }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <span>Building</span>
+                        <p>{{ $buildingName ?? 'Assigned Building' }}</p>
+                    </div>
                 </div>
             </div>
 
-            @if(!$isWithinGeofence)
-            <div style="background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0;">
-                <p style="margin: 0; color: #92400e; font-size: 14px;">
-                    <strong>⚠️ Note:</strong> Your child signed in from outside the designated building location ({{ $buildingName ?? 'Assigned Building' }}).
-                </p>
+            @if(!$isWithinGeofence || $status === 'Late')
+            <div class="alerts">
+                @if(!$isWithinGeofence)
+                <div class="alert warning">
+                    <div class="alert-icon">📍</div>
+                    <div>
+                        <p><strong>Outside building geofence</strong></p>
+                        <p>Your child signed in away from {{ $buildingName ?? 'the assigned building' }}.</p>
+                    </div>
+                </div>
+                @endif
+                @if($status === 'Late')
+                <div class="alert danger">
+                    <div class="alert-icon">⏰</div>
+                    <div>
+                        <p><strong>Late arrival</strong></p>
+                        <p>Your child arrived after the late threshold for this class.</p>
+                    </div>
+                </div>
+                @endif
             </div>
             @endif
 
-            @if($status === 'Late')
-            <div style="background-color: #fee2e2; border-left: 4px solid #ef4444; padding: 15px; border-radius: 8px; margin: 20px 0;">
-                <p style="margin: 0; color: #991b1b; font-size: 14px;">
-                    <strong>⚠️ Note:</strong> Your child arrived late to this class.
+            <div class="card footer-card">
+                <p>
+                    You're receiving this automated notification because your email address
+                    is registered as the guardian contact for <strong>{{ $studentName }}</strong>.
                 </p>
+                <p>
+                    If you have any questions, please contact your school administrator.
+                </p>
+                <div class="footer-brand">
+                    <span>PinPoint Attendance System</span>
+                    <span>Real-time attendance tracking for peace of mind</span>
+                </div>
             </div>
-            @endif
-
-            <p style="color: #6b7280; font-size: 14px; margin-top: 30px; line-height: 1.6;">
-                This is an automated notification from PinPoint Attendance System. You're receiving this email because your email address is registered as the guardian contact.
-            </p>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p><strong>PinPoint Attendance System</strong></p>
-            <p>Real-time attendance tracking for peace of mind</p>
-            <p style="margin-top: 15px;">
-                If you have any questions, please contact your school administrator.
-            </p>
         </div>
     </div>
 </body>
