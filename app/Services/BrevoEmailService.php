@@ -54,13 +54,32 @@ class BrevoEmailService
         }
 
         try {
+            // Get sender email - must be a verified sender in Brevo
+            $senderEmail = $fromEmail ?? env('MAIL_FROM_ADDRESS');
+            $senderName = $fromName ?? env('MAIL_FROM_NAME', 'PinPoint Attendance');
+            
+            if (empty($senderEmail)) {
+                Log::error('❌ MAIL_FROM_ADDRESS not configured - email cannot be sent');
+                return [
+                    'success' => false,
+                    'message' => 'MAIL_FROM_ADDRESS not configured. Please set it in .env file and ensure it is verified in Brevo.'
+                ];
+            }
+            
+            Log::info('📧 Attempting to send email via Brevo', [
+                'to' => $to,
+                'from' => $senderEmail,
+                'from_name' => $senderName,
+                'subject' => $subject
+            ]);
+            
             $sendSmtpEmail = new SendSmtpEmail([
                 'to' => [new SendSmtpEmailTo(['email' => $to])],
                 'subject' => $subject,
                 'htmlContent' => $htmlContent,
                 'sender' => [
-                    'email' => $fromEmail ?? env('MAIL_FROM_ADDRESS', 'noreply@pinpoint.app'),
-                    'name' => $fromName ?? env('MAIL_FROM_NAME', 'PinPoint Attendance')
+                    'email' => $senderEmail,
+                    'name' => $senderName
                 ]
             ]);
 

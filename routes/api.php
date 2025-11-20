@@ -61,7 +61,77 @@ Route::get('/debug/mail-config', function () {
     ]);
 });
 
-// Test email sending
+// Test Brevo email sending
+Route::get('/debug/test-brevo-email', function () {
+    try {
+        $testEmail = request()->query('email', env('MAIL_USERNAME', 'davelima2@gmail.com'));
+        $brevoApiKey = env('BREVO_API_KEY');
+        $fromEmail = env('MAIL_FROM_ADDRESS');
+        $fromName = env('MAIL_FROM_NAME', 'PinPoint Attendance');
+        
+        \Log::info('=== TEST BREVO EMAIL ATTEMPT ===', [
+            'to' => $testEmail,
+            'from' => $fromEmail,
+            'from_name' => $fromName,
+            'brevo_api_key_set' => !empty($brevoApiKey),
+            'api_key_length' => $brevoApiKey ? strlen($brevoApiKey) : 0
+        ]);
+        
+        if (empty($brevoApiKey)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'BREVO_API_KEY not configured in .env file',
+                'check' => 'Make sure BREVO_API_KEY is set in your .env file'
+            ], 400);
+        }
+        
+        if (empty($fromEmail)) {
+            return response()->json([
+                'success' => false,
+                'message' => 'MAIL_FROM_ADDRESS not configured in .env file',
+                'check' => 'Make sure MAIL_FROM_ADDRESS is set and verified in Brevo'
+            ], 400);
+        }
+        
+        $brevoService = new \App\Services\BrevoEmailService();
+        $htmlContent = '<h1>Test Email from PinPoint</h1><p>This is a test email from PinPoint Attendance System using Brevo.</p><p>Timestamp: ' . now()->toDateTimeString() . '</p><p>If you received this, Brevo API is working correctly! ✅</p>';
+        $subject = 'PinPoint Test Email - ' . now()->toDateTimeString();
+        
+        $result = $brevoService->sendEmail($testEmail, $subject, $htmlContent, $fromEmail, $fromName);
+        
+        if ($result['success']) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Test email sent successfully via Brevo!',
+                'sent_to' => $testEmail,
+                'from' => $fromEmail,
+                'message_id' => $result['message_id'] ?? 'unknown',
+                'check_inbox' => 'Check your email at ' . $testEmail,
+                'method' => 'Brevo API'
+            ]);
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to send test email via Brevo',
+                'error' => $result['message'] ?? 'Unknown error',
+                'check_logs' => 'Check storage/logs/laravel.log for more details'
+            ], 500);
+        }
+    } catch (\Exception $e) {
+        \Log::error('=== TEST BREVO EMAIL ERROR ===', [
+            'error' => $e->getMessage(),
+            'trace' => $e->getTraceAsString()
+        ]);
+        
+        return response()->json([
+            'success' => false,
+            'message' => 'Error testing Brevo email: ' . $e->getMessage(),
+            'check_logs' => 'Check storage/logs/laravel.log for more details'
+        ], 500);
+    }
+});
+
+// Test email sending (legacy Resend test)
 Route::get('/debug/test-email', function () {
     try {
         $testEmail = env('MAIL_USERNAME', 'davelima2@gmail.com');

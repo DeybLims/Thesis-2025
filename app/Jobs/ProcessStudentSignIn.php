@@ -86,12 +86,35 @@ class ProcessStudentSignIn implements ShouldQueue
             $guardianName = null;
 
             // Get student's guardian information
+            // Try by ID first, then fallback to email lookup
+            $student = null;
             if ($this->studentId) {
                 $student = Student::find($this->studentId);
-                if ($student && $student->guardian_email) {
-                    $guardianEmail = $student->guardian_email;
-                    $guardianName = $student->guardian_name ?? 'Guardian';
-                }
+            }
+            
+            // If not found by ID, try by email
+            if (!$student && $this->studentEmail) {
+                $student = Student::where('email', $this->studentEmail)->first();
+            }
+            
+            // Get guardian info if student found
+            if ($student && $student->guardian_email) {
+                $guardianEmail = $student->guardian_email;
+                $guardianName = $student->guardian_name ?? 'Guardian';
+                
+                Log::info('📧 Guardian email found for student', [
+                    'student_email' => $this->studentEmail,
+                    'student_id' => $student->id,
+                    'guardian_email' => $guardianEmail,
+                    'guardian_name' => $guardianName
+                ]);
+            } else {
+                Log::info('ℹ️ No guardian email found for student', [
+                    'student_email' => $this->studentEmail,
+                    'student_id' => $this->studentId,
+                    'student_found' => $student ? 'yes' : 'no',
+                    'has_guardian_email' => $student && $student->guardian_email ? 'yes' : 'no'
+                ]);
             }
 
             if ($guardianEmail) {
