@@ -164,6 +164,7 @@ class ProcessStudentSignIn implements ShouldQueue
                         'studentName' => $this->studentName,
                         'guardianName' => $guardianName,
                         'className' => $class->class_name,
+                        'buildingName' => optional($class->building)->name ?? 'Assigned Building',
                         'signInTime' => $currentDateTime->format('g:i A'),
                         'signInDate' => $currentDateTime->format('l, F j, Y'),
                         'status' => $this->isLate ? 'Late' : 'On Time',

@@ -190,24 +190,15 @@
                 </div>
 
                 <div class="info-row">
-                    <span class="info-label">Location:</span>
-                    <span class="info-value">
-                        <span class="location-badge {{ $isWithinGeofence ? 'location-inside' : 'location-outside' }}">
-                            {{ $isWithinGeofence ? '✓ Inside Geofence' : '⚠ Outside Geofence' }}
-                        </span>
-                    </span>
-                </div>
-
-                <div class="info-row">
-                    <span class="info-label">Distance:</span>
-                    <span class="info-value">{{ number_format($distance, 0) }} meters</span>
+                    <span class="info-label">Building:</span>
+                    <span class="info-value">{{ $buildingName ?? 'Assigned Building' }}</span>
                 </div>
             </div>
 
             @if(!$isWithinGeofence)
             <div style="background-color: #fef3c7; border-left: 4px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0;">
                 <p style="margin: 0; color: #92400e; font-size: 14px;">
-                    <strong>⚠️ Note:</strong> Your child signed in from outside the designated class location ({{ number_format($distance, 0) }}m away).
+                    <strong>⚠️ Note:</strong> Your child signed in from outside the designated building location ({{ $buildingName ?? 'Assigned Building' }}).
                 </p>
             </div>
             @endif
