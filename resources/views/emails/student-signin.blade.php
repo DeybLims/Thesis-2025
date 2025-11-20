@@ -12,7 +12,7 @@
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px; max-width:100%; background:#ffffff; border-radius:28px; overflow:hidden; box-shadow:0 20px 60px rgba(20,30,61,0.12);">
                     <!-- Header -->
                     <tr>
-                        <td style="padding:32px; background:linear-gradient(120deg,#4d64ff 0%,#2a3b8f 100%);">
+                        <td style="padding:32px; background:#1a365d;">
                             <table width="100%">
                                 <tr>
                                     <td style="color:#ffffff;">
