@@ -45,11 +45,25 @@ class ProcessStudentSignIn implements ShouldQueue
      */
     public function handle(): void
     {
+        Log::info('🚀 ProcessStudentSignIn job started', [
+            'class_id' => $this->classId,
+            'student_email' => $this->studentEmail,
+            'student_name' => $this->studentName,
+            'student_id' => $this->studentId,
+            'timestamp' => $this->currentDateTime
+        ]);
+        
         try {
             $class = ClassModel::findOrFail($this->classId);
             $currentDateTime = Carbon::parse($this->currentDateTime);
             $todayDate = $currentDateTime->format('Y-m-d');
             $geofenceRadius = $class->geofence_radius ?? env('GEOFENCE_RADIUS', 500);
+            
+            Log::info('📚 Class found for sign-in processing', [
+                'class_id' => $class->id,
+                'class_code' => $class->class_code,
+                'class_name' => $class->class_name
+            ]);
 
             // Store attendance record in attendance_entries table
             $attendanceRecord = AttendanceEntry::create([
@@ -88,13 +102,33 @@ class ProcessStudentSignIn implements ShouldQueue
             // Get student's guardian information
             // Try by ID first, then fallback to email lookup
             $student = null;
+            
+            Log::info('🔍 Looking up student for guardian email', [
+                'student_id' => $this->studentId,
+                'student_email' => $this->studentEmail
+            ]);
+            
             if ($this->studentId) {
                 $student = Student::find($this->studentId);
+                Log::info('🔍 Student lookup by ID result', [
+                    'student_id' => $this->studentId,
+                    'found' => $student ? 'yes' : 'no',
+                    'guardian_email' => $student ? ($student->guardian_email ?? 'null') : 'N/A'
+                ]);
             }
             
             // If not found by ID, try by email
             if (!$student && $this->studentEmail) {
+                Log::info('🔍 Student not found by ID, trying email lookup', [
+                    'student_email' => $this->studentEmail
+                ]);
                 $student = Student::where('email', $this->studentEmail)->first();
+                Log::info('🔍 Student lookup by email result', [
+                    'student_email' => $this->studentEmail,
+                    'found' => $student ? 'yes' : 'no',
+                    'guardian_email' => $student ? ($student->guardian_email ?? 'null') : 'N/A',
+                    'guardian_name' => $student ? ($student->guardian_name ?? 'null') : 'N/A'
+                ]);
             }
             
             // Get guardian info if student found
@@ -102,18 +136,24 @@ class ProcessStudentSignIn implements ShouldQueue
                 $guardianEmail = $student->guardian_email;
                 $guardianName = $student->guardian_name ?? 'Guardian';
                 
-                Log::info('📧 Guardian email found for student', [
+                Log::info('✅ Guardian email found for student', [
                     'student_email' => $this->studentEmail,
                     'student_id' => $student->id,
                     'guardian_email' => $guardianEmail,
                     'guardian_name' => $guardianName
                 ]);
             } else {
-                Log::info('ℹ️ No guardian email found for student', [
+                Log::warning('⚠️ No guardian email found for student', [
                     'student_email' => $this->studentEmail,
                     'student_id' => $this->studentId,
                     'student_found' => $student ? 'yes' : 'no',
-                    'has_guardian_email' => $student && $student->guardian_email ? 'yes' : 'no'
+                    'has_guardian_email' => $student && $student->guardian_email ? 'yes' : 'no',
+                    'student_data' => $student ? [
+                        'id' => $student->id,
+                        'email' => $student->email,
+                        'guardian_email' => $student->guardian_email,
+                        'guardian_name' => $student->guardian_name
+                    ] : 'student_not_found'
                 ]);
             }
 

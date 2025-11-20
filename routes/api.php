@@ -61,6 +61,68 @@ Route::get('/debug/mail-config', function () {
     ]);
 });
 
+// Check queue status and recent jobs
+Route::get('/debug/queue-status', function () {
+    try {
+        $queueConnection = config('queue.default');
+        $queueDriver = config("queue.connections.{$queueConnection}.driver");
+        
+        // Check if jobs table exists and get recent jobs
+        $recentJobs = [];
+        $failedJobs = [];
+        
+        try {
+            $recentJobs = \DB::table('jobs')
+                ->orderBy('id', 'desc')
+                ->limit(10)
+                ->get()
+                ->map(function($job) {
+                    return [
+                        'id' => $job->id,
+                        'queue' => $job->queue,
+                        'attempts' => $job->attempts,
+                        'created_at' => $job->created_at,
+                        'payload' => json_decode($job->payload, true)
+                    ];
+                });
+        } catch (\Exception $e) {
+            // Jobs table might not exist
+        }
+        
+        try {
+            $failedJobs = \DB::table('failed_jobs')
+                ->orderBy('id', 'desc')
+                ->limit(10)
+                ->get()
+                ->map(function($job) {
+                    return [
+                        'id' => $job->id,
+                        'queue' => $job->queue,
+                        'failed_at' => $job->failed_at,
+                        'exception' => substr($job->exception, 0, 500) // Limit exception length
+                    ];
+                });
+        } catch (\Exception $e) {
+            // Failed jobs table might not exist
+        }
+        
+        return response()->json([
+            'queue_connection' => $queueConnection,
+            'queue_driver' => $queueDriver,
+            'recent_jobs_count' => count($recentJobs),
+            'recent_jobs' => $recentJobs,
+            'failed_jobs_count' => count($failedJobs),
+            'failed_jobs' => $failedJobs,
+            'note' => 'If recent_jobs_count > 0, jobs are queued but may not be processing. Check if queue worker is running.'
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'error' => $e->getMessage(),
+            'trace' => $e->getTraceAsString()
+        ], 500);
+    }
+});
+
 // Test Brevo email sending
 Route::get('/debug/test-brevo-email', function () {
     try {
