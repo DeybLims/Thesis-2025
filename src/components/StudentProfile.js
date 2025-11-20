@@ -759,24 +759,13 @@ const StudentProfile = () => {
             {/* Edit Profile & Change Password Buttons - Above Separator */}
             <div className="edit-profile-section">
               <button className="edit-profile-btn" onClick={handleEditProfile}>
-                📝 Edit Profile
+                Edit Profile
               </button>
               <button 
                 className="change-password-btn" 
                 onClick={() => setShowChangePasswordModal(true)}
-                style={{
-                  marginLeft: '10px',
-                  backgroundColor: '#2196F3',
-                  color: 'white',
-                  border: 'none',
-                  padding: '10px 20px',
-                  borderRadius: '6px',
-                  cursor: 'pointer',
-                  fontSize: '14px',
-                  fontWeight: '500'
-                }}
               >
-                🔒 Change Password
+                Change Password
               </button>
             </div>
           </div>
@@ -802,7 +791,7 @@ const StudentProfile = () => {
                       color: '#6c757d',
                       fontWeight: '500'
                     }}>
-                      🏢 {classItem.building.name || 'Building'}
+                      Building: {classItem.building.name || 'Not set'}
                     </span>
                   )}
                   <span className="class-time" style={{
@@ -810,7 +799,7 @@ const StudentProfile = () => {
                     fontWeight: '600',
                     fontSize: '14px'
                   }}>
-                    {classItem.isOpen ? '🟢 OPEN' : '🔴 CLOSED'}
+                    {classItem.isOpen ? 'Open' : 'Closed'}
                   </span>
                   <span className="class-instructor">Instructor: {classItem.instructor || 'N/A'}</span>
                 </div>
@@ -834,33 +823,10 @@ const StudentProfile = () => {
         </div>
 
         {/* Logout Button - Bottom Section */}
-        <div 
-          className="logout-section"
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '40px',
-            paddingTop: '20px',
-            borderTop: '2px solid #e9ecef'
-          }}
-        >
+        <div className="logout-section">
           <button 
             className="logout-btn" 
             onClick={handleLogout}
-            style={{
-              backgroundColor: '#dc3545',
-              color: 'white',
-              padding: '12px 24px',
-              border: 'none',
-              borderRadius: '8px',
-              fontSize: '16px',
-              fontWeight: '600',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'background-color 0.3s ease'
-            }}
           >
             Logout
           </button>
@@ -1062,7 +1028,7 @@ const StudentProfile = () => {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-header">
-              <h3>🔒 Change Password</h3>
+              <h3>Change Password</h3>
               <button className="close-btn" onClick={() => {
                 setShowChangePasswordModal(false);
                 setPasswordForm({
