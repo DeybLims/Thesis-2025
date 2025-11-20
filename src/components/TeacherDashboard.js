@@ -455,8 +455,8 @@ const TeacherDashboard = () => {
   const handleEditClass = (classItem) => {
     setSelectedClass(classItem);
     setNewClass({
-      code: classItem.classCode,
-      name: classItem.className,
+      code: classItem.code || classItem.classCode || '',
+      name: classItem.name || classItem.className || '',
       date: classItem.days,
       startTime: classItem.startTime,
       endTime: classItem.endTime,
@@ -480,7 +480,7 @@ const TeacherDashboard = () => {
       const payload = {
         code: newClass.code,
         name: newClass.name,
-        date: selectedClass.date, // Preserve original date/days
+        date: selectedClass.days || selectedClass.date || newClass.date, // Preserve original date/days
         startTime: newClass.startTime,
         endTime: newClass.endTime,
         maxStudents: parseInt(newClass.maxStudents, 10) || 30,

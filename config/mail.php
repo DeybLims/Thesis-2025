@@ -101,6 +101,18 @@ return [
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
+
+        // Brevo (formerly Sendinblue) Configuration for Email Notifications
+        'brevo' => [
+            'transport' => 'smtp',
+            'host' => 'smtp-relay.brevo.com',
+            'port' => 587,
+            'encryption' => 'tls',
+            'username' => env('BREVO_SMTP_USERNAME'),
+            'password' => env('BREVO_API_KEY'),
+            'timeout' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+        ],
     ],
 
     /*

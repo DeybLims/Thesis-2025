@@ -6,6 +6,7 @@ use App\Events\AttendanceUpdated;
 use App\Models\AttendanceEntry;
 use App\Models\ClassModel;
 use App\Models\Student;
+use App\Services\BrevoEmailService;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -13,6 +14,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\View;
 
 class ProcessStudentSignIn implements ShouldQueue
 {
@@ -78,21 +80,73 @@ class ProcessStudentSignIn implements ShouldQueue
                 'class' => $class->class_code
             ]);
 
-            // EMAIL FUNCTIONALITY COMMENTED OUT - Not in use currently
-            /*
             // Send email notification to guardian (if email address exists)
             $emailSent = false;
-            if ($guardianEmail) {
-                try {
-                    // Email sending code here...
-                } catch (\Exception $emailError) {
-                    Log::error('❌ Email failed to send', [
-                        'email' => $guardianEmail,
-                        'error' => $emailError->getMessage()
-                    ]);
+            $guardianEmail = null;
+            $guardianName = null;
+
+            // Get student's guardian information
+            if ($this->studentId) {
+                $student = Student::find($this->studentId);
+                if ($student && $student->guardian_email) {
+                    $guardianEmail = $student->guardian_email;
+                    $guardianName = $student->guardian_name ?? 'Guardian';
                 }
             }
-            */
+
+            if ($guardianEmail) {
+                try {
+                    // Prepare email data
+                    $emailData = [
+                        'studentName' => $this->studentName,
+                        'guardianName' => $guardianName,
+                        'className' => $class->class_name,
+                        'signInTime' => $currentDateTime->format('g:i A'),
+                        'signInDate' => $currentDateTime->format('l, F j, Y'),
+                        'status' => $this->isLate ? 'Late' : 'On Time',
+                        'distance' => round($this->distance, 2),
+                        'isWithinGeofence' => $this->distance <= $geofenceRadius,
+                        'teacherName' => $class->teacher_name ?? 'Teacher',
+                    ];
+
+                    // Render email HTML
+                    $htmlContent = View::make('emails.student-signin', $emailData)->render();
+                    
+                    // Prepare subject
+                    $subject = '[PinPoint] ' . $this->studentName . ' signed in to ' . $class->class_name;
+
+                    // Send email using Brevo API
+                    $brevoService = new BrevoEmailService();
+                    $result = $brevoService->sendEmail($guardianEmail, $subject, $htmlContent);
+                    
+                    if ($result['success']) {
+                        $emailSent = true;
+                        Log::info('✅ Email sent to guardian via Brevo', [
+                            'guardian_email' => $guardianEmail,
+                            'student' => $this->studentName,
+                            'class' => $class->class_code,
+                            'message_id' => $result['message_id'] ?? 'unknown'
+                        ]);
+                    } else {
+                        Log::warning('⚠️ Email sending failed via Brevo', [
+                            'guardian_email' => $guardianEmail,
+                            'error' => $result['message'] ?? 'Unknown error'
+                        ]);
+                    }
+                } catch (\Exception $emailError) {
+                    Log::error('❌ Email failed to send via Brevo', [
+                        'email' => $guardianEmail,
+                        'error' => $emailError->getMessage(),
+                        'trace' => $emailError->getTraceAsString()
+                    ]);
+                    // Don't fail the job if email fails - attendance is already recorded
+                }
+            } else {
+                Log::info('ℹ️ No guardian email found for student', [
+                    'student_id' => $this->studentId,
+                    'student_email' => $this->studentEmail
+                ]);
+            }
 
             // Broadcast attendance update event
             $attendanceData = [

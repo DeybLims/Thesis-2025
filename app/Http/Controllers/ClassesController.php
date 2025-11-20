@@ -198,29 +198,60 @@ class ClassesController extends Controller
 
             // If class is open and end time changed, recalculate auto_close_time
             if ($class->is_open && $request->has('endTime') && $class->current_session_opened) {
-                $start = \Carbon\Carbon::parse($class->current_session_opened);
-                $endTime = \Carbon\Carbon::createFromFormat('H:i:s', $request->input('endTime'));
-                $today = \Carbon\Carbon::today();
-                $endDateTime = $today->copy()->setTimeFromTimeString($endTime->format('H:i:s'));
-                
-                // Calculate new duration from session start
-                $newDuration = $start->diffInMinutes($endDateTime);
-                $newAutoCloseTime = $start->copy()->addMinutes($newDuration);
-                
-                $class->update(['auto_close_time' => $newAutoCloseTime]);
-                
-                \Log::info('Recalculated auto_close_time for open class', [
-                    'class_id' => $id,
-                    'new_end_time' => $request->input('endTime'),
-                    'new_auto_close_time' => $newAutoCloseTime->toDateTimeString()
-                ]);
+                try {
+                    $start = \Carbon\Carbon::parse($class->current_session_opened);
+                    $endTimeInput = $request->input('endTime');
+                    
+                    // Handle both "HH:mm" and "HH:mm:ss" formats from HTML time input
+                    $endTime = null;
+                    if (preg_match('/^\d{2}:\d{2}:\d{2}$/', $endTimeInput)) {
+                        // Format: HH:mm:ss
+                        $endTime = \Carbon\Carbon::createFromFormat('H:i:s', $endTimeInput);
+                    } else if (preg_match('/^\d{2}:\d{2}$/', $endTimeInput)) {
+                        // Format: HH:mm
+                        $endTime = \Carbon\Carbon::createFromFormat('H:i', $endTimeInput);
+                    } else {
+                        // Try Carbon's flexible parser
+                        $endTime = \Carbon\Carbon::parse($endTimeInput);
+                    }
+                    
+                    $today = \Carbon\Carbon::today();
+                    $endDateTime = $today->copy()->setTimeFromTimeString($endTime->format('H:i:s'));
+                    
+                    // Calculate new duration from session start
+                    $newDuration = $start->diffInMinutes($endDateTime);
+                    $newAutoCloseTime = $start->copy()->addMinutes($newDuration);
+                    
+                    $class->update(['auto_close_time' => $newAutoCloseTime]);
+                    
+                    \Log::info('Recalculated auto_close_time for open class', [
+                        'class_id' => $id,
+                        'new_end_time' => $endTimeInput,
+                        'new_auto_close_time' => $newAutoCloseTime->toDateTimeString()
+                    ]);
+                } catch (\Exception $e) {
+                    \Log::warning('Failed to recalculate auto_close_time', [
+                        'class_id' => $id,
+                        'end_time' => $request->input('endTime'),
+                        'error' => $e->getMessage()
+                    ]);
+                    // Don't fail the update if auto_close_time recalculation fails
+                }
             }
 
             // Reload relationships
             $class->load(['teacher', 'building', 'students']);
 
-            // Broadcast class updated event
-            broadcast(new ClassUpdated($class, 'updated'));
+            // Broadcast class updated event (don't fail if broadcast fails)
+            try {
+                broadcast(new ClassUpdated($class, 'updated'));
+            } catch (\Exception $broadcastError) {
+                \Log::warning('Failed to broadcast class update event', [
+                    'class_id' => $id,
+                    'error' => $broadcastError->getMessage()
+                ]);
+                // Continue - don't fail the update if broadcasting fails
+            }
 
             \Log::info('Class updated successfully', ['class_id' => $id]);
 
@@ -280,8 +311,16 @@ class ClassesController extends Controller
             'building_id' => $request->input('building_id'), // Store building reference
         ]);
 
-        // Broadcast class created event
-        broadcast(new ClassUpdated($class, 'created'));
+        // Broadcast class created event (don't fail if broadcast fails)
+        try {
+            broadcast(new ClassUpdated($class, 'created'));
+        } catch (\Exception $broadcastError) {
+            \Log::warning('Failed to broadcast class creation event', [
+                'class_id' => $class->id,
+                'error' => $broadcastError->getMessage()
+            ]);
+            // Continue - don't fail the creation if broadcasting fails
+        }
 
         return response()->json([
             'message' => 'Class created successfully',
@@ -480,8 +519,16 @@ class ClassesController extends Controller
                 $message .= " (will auto-close at {$closeAt})";
             }
             
-            // Broadcast class opened event
-            broadcast(new ClassUpdated($class->fresh(['teacher', 'building', 'students']), 'opened'));
+            // Broadcast class opened event (don't fail if broadcast fails)
+            try {
+                broadcast(new ClassUpdated($class->fresh(['teacher', 'building', 'students']), 'opened'));
+            } catch (\Exception $broadcastError) {
+                \Log::warning('Failed to broadcast class opened event', [
+                    'class_id' => $classId,
+                    'error' => $broadcastError->getMessage()
+                ]);
+                // Continue - don't fail the open if broadcasting fails
+            }
             
             return response()->json([
                 'message' => $message,
@@ -523,8 +570,16 @@ class ClassesController extends Controller
             // Mark class as closed (session data stays for history)
             $class->update(['is_open' => false]);
             
-            // Broadcast class closed event
-            broadcast(new ClassUpdated($class->fresh(['teacher', 'building', 'students']), 'closed'));
+            // Broadcast class closed event (don't fail if broadcast fails)
+            try {
+                broadcast(new ClassUpdated($class->fresh(['teacher', 'building', 'students']), 'closed'));
+            } catch (\Exception $broadcastError) {
+                \Log::warning('Failed to broadcast class closed event', [
+                    'class_id' => $classId,
+                    'error' => $broadcastError->getMessage()
+                ]);
+                // Continue - don't fail the close if broadcasting fails
+            }
 
             return response()->json([
                 'message' => 'Class closed successfully',

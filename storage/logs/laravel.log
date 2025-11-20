@@ -45553,3 +45553,571 @@ Did you mean one of these?
 [2025-11-19 13:41:16] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
 [2025-11-19 13:41:16] production.INFO: Applying date filter {"date":"2025-11-19"} 
 [2025-11-19 13:41:16] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 11:55:04] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 11:55:04] production.INFO: Profile request received {"email":"trialacc@example.com"} 
+[2025-11-20 11:55:07] production.INFO: User profile data {"email":"trialacc@example.com","type":"teacher","user_data":{"id":3,"airtable_id":"recN32mPgBSmi2qoM","name":"Lorem Ipsum","email":"trialacc@example.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 11:55:09] production.INFO: Fetching attendance - START {"classId":"5","classCode":"CC Test","requestedDate":"2025-11-20"} 
+[2025-11-20 11:55:09] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
+[2025-11-20 11:55:09] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 11:55:09] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 11:55:09] production.INFO: Fetching attendance - START {"classId":"7","classCode":"CC Trial","requestedDate":"2025-11-20"} 
+[2025-11-20 11:55:09] production.INFO: Total attendance records for class {"class_code":"CC Trial","total_count":0} 
+[2025-11-20 11:55:09] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 11:55:09] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:27:10] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:27:10] production.INFO: Profile request received {"email":"trialacc@example.com"} 
+[2025-11-20 12:27:10] production.INFO: User profile data {"email":"trialacc@example.com","type":"teacher","user_data":{"id":3,"airtable_id":"recN32mPgBSmi2qoM","name":"Lorem Ipsum","email":"trialacc@example.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:27:12] production.INFO: Fetching attendance - START {"classId":"5","classCode":"CC Test","requestedDate":"2025-11-20"} 
+[2025-11-20 12:27:12] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
+[2025-11-20 12:27:12] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:27:12] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:27:12] production.INFO: Fetching attendance - START {"classId":"7","classCode":"CC Trial","requestedDate":"2025-11-20"} 
+[2025-11-20 12:27:12] production.INFO: Total attendance records for class {"class_code":"CC Trial","total_count":0} 
+[2025-11-20 12:27:12] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:27:12] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:27:26] production.INFO: Fetching attendance - START {"classId":"5","classCode":"CC Test","requestedDate":"2025-11-20"} 
+[2025-11-20 12:27:26] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
+[2025-11-20 12:27:26] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:27:26] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:29:19] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:29:19] production.INFO: Profile request received {"email":"trialacc@example.com"} 
+[2025-11-20 12:29:19] production.INFO: User profile data {"email":"trialacc@example.com","type":"teacher","user_data":{"id":3,"airtable_id":"recN32mPgBSmi2qoM","name":"Lorem Ipsum","email":"trialacc@example.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:29:20] production.INFO: Fetching attendance - START {"classId":"5","classCode":"CC Test","requestedDate":"2025-11-20"} 
+[2025-11-20 12:29:20] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
+[2025-11-20 12:29:20] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:29:20] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:29:20] production.INFO: Fetching attendance - START {"classId":"7","classCode":"CC Trial","requestedDate":"2025-11-20"} 
+[2025-11-20 12:29:20] production.INFO: Total attendance records for class {"class_code":"CC Trial","total_count":0} 
+[2025-11-20 12:29:20] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:29:20] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:29:40] production.INFO: Class update request {"class_id":"7","request_data":{"code":"CC Trial","name":"Trial Class 2","date":"2025-11-14","startTime":"18:27","endTime":"18:29","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"trialacc@example.com","building_id":"9"}} 
+[2025-11-20 12:29:47] production.ERROR: Error updating class {"class_id":"7","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2035 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763612984&auth_version=1.0&body_md5=8d803b5bbd6032de0505cc13f8774845&auth_signature=9b0b4071aa8992b07de462003abe0cdeb10eb9fd4792dba51bacf9ff920a5aed.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(223): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:29:53] production.INFO: Class update request {"class_id":"7","request_data":{"code":"CC Trial","name":"Trial Class 2","date":"2025-11-14","startTime":"18:27","endTime":"18:29","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"trialacc@example.com","building_id":"9"}} 
+[2025-11-20 12:29:55] production.ERROR: Error updating class {"class_id":"7","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2020 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763612993&auth_version=1.0&body_md5=ac624d93fabe0040d2f31758f6c3d9ec&auth_signature=dd16a4e90cd8d1e63302379b8bc022c6eb972601ed469fae1ffa0401394072e7.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(223): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:31:10] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:31:10] production.INFO: Profile request received {"email":"trialacc@example.com"} 
+[2025-11-20 12:31:10] production.INFO: User profile data {"email":"trialacc@example.com","type":"teacher","user_data":{"id":3,"airtable_id":"recN32mPgBSmi2qoM","name":"Lorem Ipsum","email":"trialacc@example.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:31:10] production.INFO: Fetching attendance - START {"classId":"5","classCode":"CC Test","requestedDate":"2025-11-20"} 
+[2025-11-20 12:31:10] production.INFO: Total attendance records for class {"class_code":"CC Test","total_count":2} 
+[2025-11-20 12:31:10] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:31:10] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:31:11] production.INFO: Fetching attendance - START {"classId":"7","classCode":"CC Trial","requestedDate":"2025-11-20"} 
+[2025-11-20 12:31:11] production.INFO: Total attendance records for class {"class_code":"CC Trial","total_count":0} 
+[2025-11-20 12:31:11] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:31:11] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:32:38] production.INFO: Class update request {"class_id":"5","request_data":{"code":"CC Test","name":"Testing Class","date":"2025-11-15","startTime":"10:53","endTime":"10:53","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"trialacc@example.com","building_id":"9"}} 
+[2025-11-20 12:32:38] production.INFO: Updated attendance records class name {"class_code":"CC Test","new_name":"Testing Class","updated_records":2} 
+[2025-11-20 12:32:40] production.ERROR: Error updating class {"class_id":"5","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2038 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613158&auth_version=1.0&body_md5=090eaa1fd9094ce6b21c3c37fb4905ec&auth_signature=edf7e3c436441b7f50639718be66403ad2a4259f912b5856b7b28d9d384928d0.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(223): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:35:20] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:35:20] production.INFO: Profile request received {"email":"reynaldoilangos@gmail.com"} 
+[2025-11-20 12:35:20] production.INFO: User profile data {"email":"reynaldoilangos@gmail.com","type":"teacher","user_data":{"id":1,"airtable_id":"rec30iJyzuJuN8h6K","name":"Reynaldo Ilangos","email":"reynaldoilangos@gmail.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:35:21] production.INFO: Fetching attendance - START {"classId":"6","classCode":"1226","requestedDate":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Total attendance records for class {"class_code":"1226","total_count":0} 
+[2025-11-20 12:35:21] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:35:21] production.INFO: Fetching attendance - START {"classId":"4","classCode":"ANIMATION 101 (LEC)","requestedDate":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Total attendance records for class {"class_code":"ANIMATION 101 (LEC)","total_count":0} 
+[2025-11-20 12:35:21] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:35:21] production.INFO: Fetching attendance - START {"classId":"3","classCode":"ICT ED 108","requestedDate":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Total attendance records for class {"class_code":"ICT ED 108","total_count":0} 
+[2025-11-20 12:35:21] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:35:21] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:35:28] production.INFO: Fetching attendance - START {"classId":"6","classCode":"1226","requestedDate":"2025-11-20"} 
+[2025-11-20 12:35:28] production.INFO: Total attendance records for class {"class_code":"1226","total_count":0} 
+[2025-11-20 12:35:28] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:35:28] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:35:33] production.INFO: Class update request {"class_id":"6","request_data":{"code":"1226","name":"Multimedia","startTime":"10:10","endTime":"00:09","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"reynaldoilangos@gmail.com","building_id":"3"}} 
+[2025-11-20 12:35:35] production.ERROR: Error updating class {"class_id":"6","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2020 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613333&auth_version=1.0&body_md5=c974a9ab154f8d90b97db7ea47f36d4a&auth_signature=0146b4bf03d8b69f41e0392988e238e6ac345664335322404a1b9071ba501c94.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(246): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:35:38] production.INFO: Class update request {"class_id":"6","request_data":{"code":"1226","name":"Multimedia","startTime":"10:10","endTime":"00:09","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"reynaldoilangos@gmail.com","building_id":"3"}} 
+[2025-11-20 12:35:40] production.ERROR: Error updating class {"class_id":"6","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2022 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613338&auth_version=1.0&body_md5=374c3d33e37ece168d06a69658ef7eaa&auth_signature=7e7681a39c579b92e2aa4454bc773ec9e4cafd8944c42b565189c4dffe5255d0.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(246): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:35:44] production.INFO: Class update request {"class_id":"6","request_data":{"code":"1226","name":"Multimedia","startTime":"10:10","endTime":"00:09","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"reynaldoilangos@gmail.com","building_id":"3"}} 
+[2025-11-20 12:35:46] production.ERROR: Error updating class {"class_id":"6","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2037 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613344&auth_version=1.0&body_md5=044782259576adca4f5073d0d8a88a92&auth_signature=32597277e6fff8eeb541be1e7eac1ca460fc5b107869ef306e2ec0d8724dc01d.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(246): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:36:03] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:36:03] production.INFO: Profile request received {"email":"reynaldoilangos@gmail.com"} 
+[2025-11-20 12:36:03] production.INFO: User profile data {"email":"reynaldoilangos@gmail.com","type":"teacher","user_data":{"id":1,"airtable_id":"rec30iJyzuJuN8h6K","name":"Reynaldo Ilangos","email":"reynaldoilangos@gmail.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:36:03] production.INFO: Fetching attendance - START {"classId":"6","classCode":"1226","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Total attendance records for class {"class_code":"1226","total_count":0} 
+[2025-11-20 12:36:03] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:03] production.INFO: Fetching attendance - START {"classId":"4","classCode":"ANIMATION 101 (LEC)","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Total attendance records for class {"class_code":"ANIMATION 101 (LEC)","total_count":0} 
+[2025-11-20 12:36:03] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:03] production.INFO: Fetching attendance - START {"classId":"3","classCode":"ICT ED 108","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Total attendance records for class {"class_code":"ICT ED 108","total_count":0} 
+[2025-11-20 12:36:03] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:03] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:16] production.INFO: Class update request {"class_id":"4","request_data":{"code":"ANIMATION 101 (LEC)","name":"Drawing Tools and Animation","startTime":"13:00","endTime":"15:00","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"reynaldoilangos@gmail.com","building_id":"5"}} 
+[2025-11-20 12:36:18] production.ERROR: Error updating class {"class_id":"4","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2043 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613376&auth_version=1.0&body_md5=61fb981c1dda6cf272a02983fa99f691&auth_signature=e1179a028f2ecd2257cffa4c39c3fcafda784c9f7ca3dc1430f1764d4e2c5312.","trace":"#0 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastEvent.php(84): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->broadcast()
+#1 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Broadcasting\\BroadcastEvent->handle()
+#2 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#4 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#5 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(661): Illuminate\\Container\\BoundMethod::call()
+#6 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(128): Illuminate\\Container\\Container->call()
+#7 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}()
+#8 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#9 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(132): Illuminate\\Pipeline\\Pipeline->then()
+#10 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(123): Illuminate\\Bus\\Dispatcher->dispatchNow()
+#11 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}()
+#12 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(122): Illuminate\\Pipeline\\Pipeline->then()
+#14 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(70): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware()
+#15 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(98): Illuminate\\Queue\\CallQueuedHandler->call()
+#16 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(43): Illuminate\\Queue\\Jobs\\Job->fire()
+#17 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Queue.php(57): Illuminate\\Queue\\SyncQueue->push()
+#18 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(183): Illuminate\\Queue\\Queue->pushOn()
+#19 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(320): Illuminate\\Broadcasting\\BroadcastManager->queue()
+#20 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Events\\Dispatcher.php(243): Illuminate\\Events\\Dispatcher->broadcastEvent()
+#21 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PendingBroadcast.php(72): Illuminate\\Events\\Dispatcher->dispatch()
+#22 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(219): Illuminate\\Broadcasting\\PendingBroadcast->__destruct()
+#23 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\app\\Http\\Controllers\\ClassesController.php(246): broadcast()
+#24 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\ClassesController->update()
+#25 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#26 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#27 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#28 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(798): Illuminate\\Routing\\Route->run()
+#29 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#30 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#32 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(92): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#34 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(54): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#35 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#36 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#38 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#39 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#40 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#41 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#42 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#43 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#45 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#46 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#49 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#51 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#53 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#54 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#55 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#56 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#57 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#58 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#59 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#60 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#61 C:\\Users\\Evren\\Documents\\GitHub\\Thesis-2025\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('...')
+#62 {main}"} 
+[2025-11-20 12:36:24] production.INFO: Fetching attendance - START {"classId":"4","classCode":"ANIMATION 101 (LEC)","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:24] production.INFO: Total attendance records for class {"class_code":"ANIMATION 101 (LEC)","total_count":0} 
+[2025-11-20 12:36:24] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:24] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:27] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:36:27] production.INFO: Profile request received {"email":"reynaldoilangos@gmail.com"} 
+[2025-11-20 12:36:27] production.INFO: User profile data {"email":"reynaldoilangos@gmail.com","type":"teacher","user_data":{"id":1,"airtable_id":"rec30iJyzuJuN8h6K","name":"Reynaldo Ilangos","email":"reynaldoilangos@gmail.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:36:28] production.INFO: Fetching attendance - START {"classId":"6","classCode":"1226","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Total attendance records for class {"class_code":"1226","total_count":0} 
+[2025-11-20 12:36:28] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:28] production.INFO: Fetching attendance - START {"classId":"4","classCode":"ANIMATION 101 (LEC)","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Total attendance records for class {"class_code":"ANIMATION 101 (LEC)","total_count":0} 
+[2025-11-20 12:36:28] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:36:28] production.INFO: Fetching attendance - START {"classId":"3","classCode":"ICT ED 108","requestedDate":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Total attendance records for class {"class_code":"ICT ED 108","total_count":0} 
+[2025-11-20 12:36:28] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:36:28] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:39:00] production.INFO: ===== STUDENT PROFILE GET REQUEST =====  
+[2025-11-20 12:39:00] production.INFO: Profile request received {"email":"reynaldoilangos@gmail.com"} 
+[2025-11-20 12:39:00] production.INFO: User profile data {"email":"reynaldoilangos@gmail.com","type":"teacher","user_data":{"id":1,"airtable_id":"rec30iJyzuJuN8h6K","name":"Reynaldo Ilangos","email":"reynaldoilangos@gmail.com","username":null,"first_name":null,"last_name":null,"role":"teacher","department":null,"created_at":"2025-11-12T12:37:15.000000Z","updated_at":"2025-11-12T12:40:51.000000Z"}} 
+[2025-11-20 12:39:00] production.INFO: Fetching attendance - START {"classId":"6","classCode":"1226","requestedDate":"2025-11-20"} 
+[2025-11-20 12:39:00] production.INFO: Total attendance records for class {"class_code":"1226","total_count":0} 
+[2025-11-20 12:39:00] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:39:00] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:39:01] production.INFO: Fetching attendance - START {"classId":"4","classCode":"ANIMATION 101 (LEC)","requestedDate":"2025-11-20"} 
+[2025-11-20 12:39:01] production.INFO: Total attendance records for class {"class_code":"ANIMATION 101 (LEC)","total_count":0} 
+[2025-11-20 12:39:01] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:39:01] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:39:01] production.INFO: Fetching attendance - START {"classId":"3","classCode":"ICT ED 108","requestedDate":"2025-11-20"} 
+[2025-11-20 12:39:01] production.INFO: Total attendance records for class {"class_code":"ICT ED 108","total_count":0} 
+[2025-11-20 12:39:01] production.INFO: Applying date filter {"date":"2025-11-20"} 
+[2025-11-20 12:39:01] production.INFO: Attendance records found {"count":0,"records":[]} 
+[2025-11-20 12:39:05] production.INFO: Class update request {"class_id":"6","request_data":{"code":"1226","name":"Multimedia","startTime":"10:10","endTime":"00:09","maxStudents":30,"lateThreshold":15,"isManualControl":false,"teacherEmail":"reynaldoilangos@gmail.com","building_id":"9"}} 
+[2025-11-20 12:39:08] production.WARNING: Failed to broadcast class update event {"class_id":"6","error":"Pusher error: cURL error 7: Failed to connect to 127.0.0.1 port 6001 after 2048 ms: Connection refused (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://127.0.0.1:6001/apps/pinpoint/events?auth_key=pinpointkey&auth_timestamp=1763613546&auth_version=1.0&body_md5=845d957f5f137c7c4c14d2747986d62d&auth_signature=51a39ab84ccc7b6f6ad68265c6a721ae1c594923b9a5761e374d588627e66136."} 
+[2025-11-20 12:39:08] production.INFO: Class updated successfully {"class_id":"6"} 
